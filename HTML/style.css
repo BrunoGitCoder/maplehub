@@ -1,7 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&display=swap');
 
+.box_color1 {
+    background: linear-gradient(to bottom, #3E768E, #1E2126 1%, #2E4B59 80%, #2E4B59 90%, #29313C);
+    opacity: 0.95;
+    border: 1px solid #3E768E;
+    border-radius: 15px;
+    outline: 1px solid #29313c;
+}
+
 :root{
     --dark_blue: #011223;
+    --box_gradient: linear-gradient(to bottom, #6F84A2, #3D4959 1%, #29313C 11%, #29313C 90%, #1E2126);
 }
 
 ::-webkit-scrollbar {
@@ -10,12 +19,17 @@
 
 ::-webkit-scrollbar-track {
     background: #ffffff50;
-  }
+}
+
+html{
+    scroll-behavior: smooth;
+}
 
 *{
     padding: 0;
     margin: 0;
     user-select: none;
+    color: aliceblue;
 }
 
 body{
@@ -120,7 +134,64 @@ a{
     outline: none;
 }
 
+.menuDaily{
+    width: 80vw;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+}
+
+.dailyOpt{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-family: Roboto, sans-serif;
+}
+
+.dailyOpt:hover{
+    text-shadow: 0 0 15px #56a8db;
+}
 
 .dailybody{
-    height: 300vh;
+    margin: 50px auto;
+    max-width: 80vw;
+    padding: 20px;
+}
+
+.gridBoss{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    overflow-y: auto;
+    height: 500px;
+    padding: 20px 0;
+
+    mask-image: linear-gradient(transparent, black 10%), 
+                linear-gradient(to top, transparent, black 10%);
+  mask-composite: intersect;
+}
+
+.gridBoss::-webkit-scrollbar {
+    width: 8px;
+}
+
+.gridBoss::-webkit-scrollbar-track {
+    background: var(--dark_blue);
+}
+::-webkit-scrollbar-thumb {
+    background-color: #d2e1e7;  /* Cor principal do thumb (neon) */
+    border-radius: 10px;        /* Deixa o thumb com cantos arredondados */
+    border: 2px solid #3e768e77;  /* Borda sólida ao redor do thumb */
+    
+    /* Aplicando o efeito de neon com sombra */
+    box-shadow: 0 0 5px #3E768E, 
+                0 0 10px #444645, 
+                0 0 15px #3E768E, 
+                0 0 20px #3E768E;
+}
+
+.bossCard img{
+    height: 15rem;
 }

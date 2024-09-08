@@ -31,6 +31,123 @@
         </div>
         <i class="fa-solid fa-bars fa-lg" style="color: #ffffff90;"></i>
     </nav>
-    <div class="dailybody"></div>
+
+    <div class="menuDaily">
+        <a href="javascript:void(0)" onclick="scrollToDiv('bossDiv')">
+            <div class="dailyOpt box_color1">BOSSES</div>
+        </a>
+        <a href="">
+            <div class="dailyOpt box_color1">TASKS</div>
+        </a>
+        <a href="">
+            <div class="dailyOpt box_color1">ARCANE</div>
+        </a>
+        <a>
+            <div class="dailyOpt box_color1">GRANDIS</div>
+        </a>
+    </div>
+
+    <div class="dailybody box_color1" id="bossDiv">
+        <H1>Daily Bosses</H1>
+        <div class="gridBoss">
+            <div class="bossCard" id="ursus">
+                <img src="../src/img/boss/Boss_UI_-_Ursus.png" alt="">
+            </div>
+            <div class="bossCard" id="balrog">
+                <img src="../src/img/boss/Boss_UI_-_Balrog.png" alt="">
+            </div>
+            <div class="bossCard" id="zakum">
+                <img src="../src/img/boss/Boss_UI_-_Zakum.png" alt="">
+            </div>
+            <div class="bossCard" id="magnus">
+                <img src="../src/img/boss/Boss_UI_-_Magnus.png" alt="">
+            </div>
+            <div class="bossCard" id="hilla">
+                <img src="../src/img/boss/Boss_UI_-_Hilla.png" alt="">
+            </div>
+            <div class="bossCard" id="omni">
+                <img src="../src/img/boss/Boss_UI_-_OMNI-CLN.png" alt="">
+            </div>
+            <div class="bossCard" id="papulatus">
+                <img src="../src/img/boss/Boss_UI_-_Papulatus.png" alt="">
+            </div>
+            <div class="bossCard" id="pierre">
+                <img src="../src/img/boss/Boss_UI_-_Pierre.png" alt="">
+            </div>
+            <div class="bossCard" id="vonbon">
+                <img src="../src/img/boss/Boss_UI_-_Von_Bon.png" alt="">
+            </div>
+            <div class="bossCard" id="queen">
+                <img src="../src/img/boss/Boss_UI_-_Crimson_Queen.png" alt="">
+            </div>
+            <div class="bossCard" id="vellum">
+                <img src="../src/img/boss/Boss_UI_-_Vellum.png" alt="">
+            </div>
+            <div class="bossCard" id="vonleon">
+                <img src="../src/img/boss/Boss_UI_-_Von_Leon.png" alt="">
+            </div>
+            <div class="bossCard" id="horntail">
+                <img src="../src/img/boss/Boss_UI_-_Horntail.png" alt="">
+            </div>
+            <div class="bossCard" id="">
+                <img src="../src/img/boss/" alt="">
+            </div>
+            <div class="bossCard" id="">
+                <img src="../src/img/boss/" alt="">
+            </div>
+            <div class="bossCard" id="">
+                <img src="../src/img/boss/" alt="">
+            </div>
+            <div class="bossCard" id="">
+                <img src="../src/img/boss/" alt="">
+            </div>
+            <div class="bossCard" id="">
+                <img src="../src/img/boss/" alt="">
+            </div>
+            <div class="bossCard" id="">
+                <img src="../src/img/boss/" alt="">
+            </div>
+            <div class="bossCard" id="">
+                <img src="../src/img/boss/" alt="">
+            </div>
+            
+
+            
+        </div>
+    </div>
+
+    <div class="dailybody">
+        <H1>Daily Bosses</H1>
+        <div class="gridBoss">
+            <div class="bossCard">
+                <img src="../src/img/boss/Boss_UI_-_Zakum.png" alt="Zakum">
+            </div>
+
+            
+        </div>
+    </div>
+
+    <div class="dailybody" id="grandisDiv">
+        <H1>Daily Bosses</H1>
+        <div class="gridBoss">
+            <div class="bossCard">
+                <img src="../src/img/boss/Boss_UI_-_Zakum.png" alt="Zakum">
+            </div>
+
+            
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function scrollToDiv(divId) {
+            var element = document.getElementById(divId);
+            element.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+
+    </script>
+
 </body>
 </html>
