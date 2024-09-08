@@ -4,6 +4,14 @@
     --dark_blue: #011223;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff50;
+  }
+
 *{
     padding: 0;
     margin: 0;
@@ -14,8 +22,13 @@ body{
     background-image: url(../src/img/bckg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-y: 5%;
     background-color: var(--dark_blue);
+}
+.daily{
+    background-size: contain; /* Garante que a imagem fique toda visível */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center top; /* Centraliza a imagem no topo da tela */
+    width: 100vw; /* Garante que o body tenha 100% da largura da viewport */
 }
 
 nav{
@@ -97,4 +110,17 @@ h1,h2{
     font-family: "Glory", sans-serif;
     font-weight: 800;
     font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.dailybody{
+    height: 300vh;
 }
